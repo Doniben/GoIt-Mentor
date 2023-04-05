@@ -1,0 +1,23 @@
+body {
+    background-color: #3C2A21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #F7C04A;
+    width: 300px;
+    border: 2px solid #F8F5E4;
+    border-radius: 10px;
+}
+
+.inner-element {
+    background-color: #539165;
+    border-radius: 10px;
+}
+
+.inner-element p {
+    color: #F8F5E4; /* #2C3333 #F8F5E4*/
+}
