@@ -1,25 +1,17 @@
-import React from 'react';
+// Please fix everything that is wrong here, you can rewrite it to a functional component.
+// What's wrong here?
+// If something is wrong, how can it be fixed?
 
 class ListRenderer extends React.Component {
   state = {
     event: null
   };
 
-  componentDidMount() {
-    window.addEventListener('message', this.handleMessage);
+  componentDidUpdate (prevProps, prevState, snapshot) {
+    window.addEventListener('message', (e) => this.setState({ event: e }))
   }
 
-  componentWillUnmount() {
-    window.removeEventListener('message', this.handleMessage);
-  }
-
-  handleMessage = (e) => {
-    this.setState({ event: e });
-  };
-
-  render() {
-    return <div>{this.state.event && <p>{this.state.event.data}</p>}</div>;
+  render () {
+    return this.state.event;
   }
 }
-
-export default ListRenderer;
