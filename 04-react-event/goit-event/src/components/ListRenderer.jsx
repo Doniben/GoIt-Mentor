@@ -2,6 +2,8 @@
 // What's wrong here?
 // If something is wrong, how can it be fixed?
 
+import React from 'react';
+
 class ListRenderer extends React.Component {
   state = {
     event: null
