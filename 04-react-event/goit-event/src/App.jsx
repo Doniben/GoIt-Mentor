@@ -16,7 +16,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <a href="https://goit.global/ph/" title="GoIT Global" aria-label="GoIT Global">
-          <img src={goitLogo} className="logo react" alt="React logo" />
+          <img src={goitLogo} className="logo goit" alt="GoIt logo" />
         </a>
       </div>
       <h1>Vite + React + GOIT</h1>
